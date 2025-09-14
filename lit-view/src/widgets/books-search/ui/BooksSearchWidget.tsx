@@ -5,7 +5,7 @@ import { BooksList } from "@/entities";
 import { useBooks } from "@/shared/hooks";
 import { Suspense } from "react";
 
-export function BooksSearchWidget() {
+export const BooksSearchWidget = () => {
   const { setBooksData, booksData, searchQuery, setSearchQuery, lang, setLang } = useBooks();
 
   const handleSearchBooks = (value: string) => {

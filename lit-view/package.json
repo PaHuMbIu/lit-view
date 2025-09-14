@@ -7,7 +7,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "axios": "^1.11.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
     "prettier": "3.6.2",
