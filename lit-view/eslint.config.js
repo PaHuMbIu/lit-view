@@ -7,21 +7,21 @@ import reactHooks from "eslint-plugin-react-hooks";
 import prettierConfig from "eslint-config-prettier";
 import prettierPlugin from "eslint-plugin-prettier";
 import globals from "globals";
-import nextConfig from "./next.config.ts";
 
 export default tseslint.config({
   files: ["src/**/*.{js,jsx,mjs,cjs,ts,tsx}"],
-  extends: [
-    eslint.configs.recommended,
-    ...tseslint.configs.recommendedTypeChecked,
-    prettierConfig,
-    nextConfig,
-  ],
+  extends: [eslint.configs.recommended, ...tseslint.configs.recommendedTypeChecked, prettierConfig],
   plugins: {
     react,
     "react-hooks": reactHooks,
     prettier: prettierPlugin,
   },
+  ignores: [
+    "node_modules/*",
+    ".next/*",
+    "dist/*",
+    "out/*"
+  ],
   languageOptions: {
     parserOptions: {
       ecmaVersion: "latest",

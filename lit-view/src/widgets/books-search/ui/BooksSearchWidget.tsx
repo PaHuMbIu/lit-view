@@ -26,9 +26,9 @@ export const BooksSearchWidget = () => {
         <LanguageFilters lang={lang} setLang={setLang} />
       </nav>
 
-      <Suspense  fallback={<div>Loading books...</div>}>
+      <Suspense fallback={<div>Loading books...</div>}>
         <BooksList booksData={booksData} setBooksData={setBooksData} />
       </Suspense>
     </div>
   );
-}
+};

@@ -1,10 +1,10 @@
 import axios from "axios";
 import { BookInfo, ApiBookRes, ApiBook } from "@/shared/types/books";
-import { API_BASE_URL } from "@/shared/config/api";
+const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 export const fetchBookById = async (id: number): Promise<BookInfo | null> => {
   try {
-    const url = `${API_BASE_URL}/books/?ids=${id}`;
+    const url = `${apiUrl}/books/?ids=${id}`;
     const response = await axios.get<ApiBookRes>(url);
     const book: ApiBook | undefined = response.data.results[0];
 

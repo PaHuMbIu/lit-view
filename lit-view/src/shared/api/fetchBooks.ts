@@ -1,9 +1,9 @@
 import axios from "axios";
 import { ApiBook, ApiBookRes, BookInfo } from "@/shared/types/books";
-import { API_BASE_URL } from "@/shared/config/api";
+const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 export const fetchBooks = async (
-  url: string = `${API_BASE_URL}/books`,
+  url: string = `${apiUrl}/books`,
 ): Promise<{
   books: BookInfo[];
   next: string | null;
