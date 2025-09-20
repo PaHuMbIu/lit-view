@@ -31,7 +31,7 @@ It was developed as a test assignment for [Plan9](https://plan9.tech/).
 |----------------|------------|
 | Framework      | [Next.js](https://nextjs.org/) (App Router) |
 | Language       | [TypeScript](https://www.typescriptlang.org/) |
-| Styling        | CSS Modules / PostCSS (or Tailwind if applied) |
+| Styling        | TailwindCSS |
 | Deployment     | [Netlify](https://www.netlify.com/) |
 | Code Quality   | ESLint, Prettier |
 
