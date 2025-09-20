@@ -13,7 +13,6 @@ It was developed as a test assignment for [Plan9](https://plan9.tech/).
 - [Tech Stack](#tech-stack)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Project Structure](#project-structure)  
 
 ---
 
@@ -75,20 +74,4 @@ Build and start:
 ```bash
 npm run build
 npm run start
-```
-## Project Structure
-
-```bash
-lit-view/
-├── public/         # Static assets
-├── src/            # Source code
-│   ├── app/        # App Router pages
-│   ├── components/ # Reusable UI components
-│   ├── styles/     # Styling
-│   └── utils/      # Helpers and utilities
-├── next.config.mjs
-├── tsconfig.json
-├── package.json
-├── netlify.toml    # Netlify deployment config
-└── …               # Linting, formatting configs, etc.
 ```
