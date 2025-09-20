@@ -14,8 +14,6 @@ It was developed as a test assignment for [Plan9](https://plan9.tech/).
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Project Structure](#project-structure)  
-- [Possible Improvements](#possible-improvements)  
-- [Author](#author)  
 
 ---
 
@@ -80,6 +78,7 @@ npm run start
 ```
 ## Project Structure
 
+```bash
 lit-view/
 ├── public/         # Static assets
 ├── src/            # Source code
@@ -92,3 +91,4 @@ lit-view/
 ├── package.json
 ├── netlify.toml    # Netlify deployment config
 └── …               # Linting, formatting configs, etc.
+```
